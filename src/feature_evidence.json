@@ -1,0 +1,60 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-join-community-call-to-action-in-the-closing-cta-section-so-it-includes-a-working-x-twitter-link-pointing-to-https-x-com-ar94595",
+      "featureTitle": "Update the “Join Community” call-to-action in the Closing CTA section so it includes a working X (Twitter) link pointing to https://x.com/ar94595.",
+      "files": [
+        "frontend/src/components/landing/ClosingCTASection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-new-flubby-gallery-section-to-the-landing-page-that-displays-multiple-flubby-images-with-relatable-motivational-captions-users-can-connect-with",
+      "featureTitle": "Add a new “Flubby Gallery” section to the landing page that displays multiple Flubby images with relatable, motivational captions users can connect with.",
+      "files": [
+        "frontend/src/components/landing/FlubbyGallerySection.tsx",
+        "frontend/src/components/landing/LandingPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-integrate-the-newly-generated-flubby-gallery-images-into-the-frontend-as-static-assets-and-reference-them-from-the-new-gallery-section",
+      "featureTitle": "Integrate the newly generated Flubby gallery images into the frontend as static assets and reference them from the new gallery section.",
+      "files": [
+        "frontend/src/components/landing/FlubbyGallerySection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

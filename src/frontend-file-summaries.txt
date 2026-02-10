@@ -1,0 +1,15 @@
+{
+  "frontend/src/index.css": "Global styles with warm coral/peach and golden OKLCH color palette, custom typography scale, and uplifting design tokens for light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended theme including custom fonts, warm color palette, varied border radii, soft shadows, and custom animations (float, pulse-soft).",
+  "frontend/index.html": "HTML entry point with Flubby branding, meta description, and favicon reference to the generated avatar asset.",
+  "frontend/src/App.tsx": "Root application component that renders the LandingPage component.",
+  "frontend/src/components/landing/LandingPage.tsx": "Main landing page container that assembles all sections (hero, manifesto, at-a-glance, highlights, gallery, closing CTA) in the required narrative flow.",
+  "frontend/src/components/landing/LandingLayout.tsx": "Layout wrapper providing subtle background pattern, consistent spacing, and footer with attribution and current year.",
+  "frontend/src/components/landing/HeroSection.tsx": "Hero section featuring Flubby character artwork, emotional headline about trying his best, ticker display, placeholder CTAs, and decorative sticker elements.",
+  "frontend/src/components/landing/ManifestoSection.tsx": "Story/manifesto section with empathetic motivational copy about perseverance, three core values (Heart, Focus, Resilience), and Flubby's motto.",
+  "frontend/src/components/landing/AtAGlanceSection.tsx": "Facts panel displaying confirmed details (name: Flubby, ticker: $FLUB) and explicit TBA placeholders for unknown information (blockchain, supply).",
+  "frontend/src/components/landing/HighlightsSection.tsx": "Key highlights section with four cards emphasizing emotional/motivational positioning (relatable, community-first, purpose-driven, transparent).",
+  "frontend/src/components/landing/ClosingCTASection.tsx": "Closing call-to-action section with \"Never give up\" messaging, a disabled \"Get Started\" button, and a working external link to X (https://x.com/ar94595) via the \"Join Community on X\" button that opens in a new tab.",
+  "frontend/src/hooks/useQueries.ts": "Empty queries file as the backend has no methods and the landing page is static with no backend interactions.",
+  "frontend/src/components/landing/FlubbyGallerySection.tsx": "Gallery section displaying 6 Flubby images in a responsive grid (1 column on mobile, 2 on tablet, 3 on desktop) with motivational captions that reinforce the \"keep trying\" theme; each card features hover effects and uses static assets from /assets/generated."
+}

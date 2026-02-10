@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a beautiful landing page for the Flubby meme coin (ticker: FLUB) with an emotional, motivational \"never give up / keep trying\" theme that helps viewers connect with Flubby as a character.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Square illustration of Flubby looking determined with a warm uplifting background (flubby-gallery-01.dim_1200x1200.png)\n- Square illustration of Flubby looking tired-but-still-trying, cozy emotional lighting (flubby-gallery-02.dim_1200x1200.png)\n- Square illustration of Flubby getting back up after a stumble, hopeful mood (flubby-gallery-03.dim_1200x1200.png)\n- Square illustration of Flubby cheering a small win, celebratory but gentle tone (flubby-gallery-04.dim_1200x1200.png)\n- Square illustration of Flubby quietly practicing again, calm focused vibe (flubby-gallery-05.dim_1200x1200.png)\n- Square illustration of Flubby with a supportive community vibe, warm and friendly (flubby-gallery-06.dim_1200x1200.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-mobile-first-landing-page-for-the-flubby-meme-coin-ticker-flub-that-centers-on-flubby-as-a-character-trying-his-best-with-an-emotional-motivational-theme-never-give-up-keep-trying-all-user-facing-copy-must-be-in-english-and-written-to-help-visitors-empathize-with-flubby",
+      "title": "Create a single-page, mobile-first landing page for the Flubby meme coin (ticker: FLUB) that centers on Flubby as a character “trying his best,” with an emotional, motivational theme: “Never give up. Keep trying.” All user-facing copy must be in English and written to help visitors empathize with Flubby.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-define-and-apply-one-distinct-visual-theme-consistently-across-the-landing-page-color-palette-typography-pairings-spacing-button-styles-and-section-layout-that-feels-uplifting-and-emotional-do-not-use-a-generic-corporate-look",
+      "title": "Define and apply one distinct visual theme consistently across the landing page (color palette, typography pairings, spacing, button styles, and section layout) that feels uplifting and emotional (do not use a generic corporate look).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-hero-section-that-introduces-flubby-and-the-core-message-including-a-strong-headline-a-short-supportive-subheadline-and-a-prominent-call-to-action-area-ctas-can-be-non-functional-placeholders-if-no-urls-are-provided",
+      "title": "Add a hero section that introduces Flubby and the core message, including: a strong headline, a short supportive subheadline, and a prominent call-to-action area (CTAs can be non-functional placeholders if no URLs are provided).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-flubby-s-story-manifesto-section-written-in-an-emotional-motivational-tone-never-give-up-keep-trying-designed-for-readability-line-length-spacing-and-hierarchy",
+      "title": "Add a “Flubby’s Story / Manifesto” section written in an emotional, motivational tone (never give up / keep trying), designed for readability (line length, spacing, and hierarchy).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-flub-at-a-glance-section-that-displays-only-confirmed-facts-from-the-user-request-flubby-ticker-flub-and-uses-safe-placeholders-for-any-missing-details-e-g-contract-address-chain-supply-without-inventing-values",
+      "title": "Add a “FLUB at a glance” section that displays only confirmed facts from the user request (Flubby, ticker FLUB) and uses safe placeholders for any missing details (e.g., contract address, chain, supply) without inventing values.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-integrate-custom-static-images-for-the-landing-page-hero-character-supporting-visuals-store-them-as-static-assets-and-render-them-directly-from-the-frontend-do-not-fetch-images-from-the-backend",
+      "title": "Generate and integrate custom static images for the landing page (hero character + supporting visuals). Store them as static assets and render them directly from the frontend (do not fetch images from the backend).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-join-community-call-to-action-in-the-closing-cta-section-so-it-includes-a-working-x-twitter-link-pointing-to-https-x-com-ar94595",
+      "title": "Update the “Join Community” call-to-action in the Closing CTA section so it includes a working X (Twitter) link pointing to https://x.com/ar94595.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-flubby-gallery-section-to-the-landing-page-that-displays-multiple-flubby-images-with-relatable-motivational-captions-users-can-connect-with",
+      "title": "Add a new “Flubby Gallery” section to the landing page that displays multiple Flubby images with relatable, motivational captions users can connect with.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-newly-generated-flubby-gallery-images-into-the-frontend-as-static-assets-and-reference-them-from-the-new-gallery-section",
+      "title": "Integrate the newly generated Flubby gallery images into the frontend as static assets and reference them from the new gallery section.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a beautiful web/landing page for the Flubby meme coin (FLUB) with an emotional, motivational \"never give up / keep trying\" theme centered on Flubby trying his best.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add an X (Twitter) link under the “Join Community” section pointing to https://x.com/ar94595.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add a “Flubby Gallery” section with more Flubby images, each paired with relatable captions that help people connect with Flubby.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Flubby",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

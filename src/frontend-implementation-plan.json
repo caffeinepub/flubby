@@ -1,0 +1,94 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add X link to Closing CTA and Flubby Gallery section with new static images",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "summary": "Make the Closing CTA “Join Community” action a working external X (Twitter) link to https://x.com/ar94595.",
+      "acceptanceCriteria": [
+        "The “Join Community” CTA in the Closing CTA section is clickable and navigates to https://x.com/ar94595.",
+        "The link opens in a new tab and uses safe external-link attributes (e.g., rel=\"noopener noreferrer\").",
+        "User-facing label clearly indicates X (e.g., “Join on X” or “Join Community on X”) and remains in English.",
+        "No backend changes are required for this link to function."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/landing/ClosingCTASection.tsx",
+          "operation": "modify",
+          "description": "Replace the disabled “Join Community” button with an external anchor link to https://x.com/ar94595 that opens in a new tab with rel=\"noopener noreferrer\"; keep styling consistent by composing the existing shadcn-ui Button component (e.g., via supported composition patterns). Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add a new “Flubby Gallery” section on the landing page showing at least 6 static images with motivational captions in a responsive grid.",
+      "acceptanceCriteria": [
+        "A new section titled “Flubby Gallery” is visible on the landing page.",
+        "The gallery shows at least 6 Flubby images (from new static assets) with a short caption for each item.",
+        "All captions are in English and match the site’s emotional “keep trying / never give up” tone.",
+        "The gallery layout is mobile-first (single column on small screens) and scales to a multi-column grid on larger screens.",
+        "Images are loaded from frontend static assets under /assets/generated and are not fetched from the backend."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/landing/FlubbyGallerySection.tsx",
+          "operation": "create",
+          "description": "Create the Flubby Gallery landing section component, using existing shadcn-ui Card primitives (and optionally other existing composed UI components) to render a responsive, mobile-first gallery grid with at least 6 items; each item should include an image, English caption, and English alt text, referencing static files under frontend/public/assets/generated. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/landing/LandingPage.tsx",
+          "operation": "modify",
+          "description": "Wire the new FlubbyGallerySection into the landing page composition (e.g., placed before the ClosingCTASection) so it is visible and navigable as part of the existing landing flow."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add the newly generated Flubby gallery images as static assets and reference their exact filenames from the gallery section with appropriate alt text.",
+      "acceptanceCriteria": [
+        "All required new gallery images exist under frontend/public/assets/generated (or the project’s established generated-assets location).",
+        "The gallery section references the exact generated filenames provided in the image requirements.",
+        "Each gallery image includes appropriate alt text in English.",
+        "No image content is served or proxied via the Motoko backend."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/flubby-gallery-01.dim_1200x1200.png",
+          "operation": "create",
+          "description": "Add generated static asset: frontend/public/assets/generated/flubby-gallery-01.dim_1200x1200.png (Square illustration of Flubby looking determined with a warm uplifting background)."
+        },
+        {
+          "path": "frontend/public/assets/generated/flubby-gallery-02.dim_1200x1200.png",
+          "operation": "create",
+          "description": "Add generated static asset: frontend/public/assets/generated/flubby-gallery-02.dim_1200x1200.png (Square illustration of Flubby looking tired-but-still-trying, cozy emotional lighting)."
+        },
+        {
+          "path": "frontend/public/assets/generated/flubby-gallery-03.dim_1200x1200.png",
+          "operation": "create",
+          "description": "Add generated static asset: frontend/public/assets/generated/flubby-gallery-03.dim_1200x1200.png (Square illustration of Flubby getting back up after a stumble, hopeful mood)."
+        },
+        {
+          "path": "frontend/public/assets/generated/flubby-gallery-04.dim_1200x1200.png",
+          "operation": "create",
+          "description": "Add generated static asset: frontend/public/assets/generated/flubby-gallery-04.dim_1200x1200.png (Square illustration of Flubby cheering a small win, celebratory but gentle tone)."
+        },
+        {
+          "path": "frontend/public/assets/generated/flubby-gallery-05.dim_1200x1200.png",
+          "operation": "create",
+          "description": "Add generated static asset: frontend/public/assets/generated/flubby-gallery-05.dim_1200x1200.png (Square illustration of Flubby quietly practicing again, calm focused vibe)."
+        },
+        {
+          "path": "frontend/public/assets/generated/flubby-gallery-06.dim_1200x1200.png",
+          "operation": "create",
+          "description": "Add generated static asset: frontend/public/assets/generated/flubby-gallery-06.dim_1200x1200.png (Square illustration of Flubby with a supportive community vibe, warm and friendly)."
+        },
+        {
+          "path": "frontend/src/components/landing/FlubbyGallerySection.tsx",
+          "operation": "modify",
+          "description": "Reference the exact generated filenames in the gallery data source (frontend/public/assets/generated/flubby-gallery-01.dim_1200x1200.png through frontend/public/assets/generated/flubby-gallery-06.dim_1200x1200.png) and ensure each image has appropriate English alt text; keep all images strictly served as static assets (no backend calls)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1.25rem;
+        /* Warm, uplifting palette - soft coral/peach primary with golden accents */
+        --background: 0.98 0.01 40;
+        --foreground: 0.25 0.02 30;
+        --card: 1 0.015 45;
+        --card-foreground: 0.25 0.02 30;
+        --popover: 1 0.015 45;
+        --popover-foreground: 0.25 0.02 30;
+        /* Warm coral/salmon primary */
+        --primary: 0.68 0.18 25;
+        --primary-foreground: 0.99 0.01 40;
+        /* Soft golden secondary */
+        --secondary: 0.92 0.08 75;
+        --secondary-foreground: 0.35 0.03 50;
+        --muted: 0.95 0.02 50;
+        --muted-foreground: 0.55 0.02 35;
+        /* Warm golden accent */
+        --accent: 0.85 0.15 65;
+        --accent-foreground: 0.30 0.03 45;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.90 0.03 50;
+        --input: 0.90 0.03 50;
+        --ring: 0.68 0.18 25;
+        --chart-1: 0.68 0.18 25;
+        --chart-2: 0.85 0.15 65;
+        --chart-3: 0.75 0.12 180;
+        --chart-4: 0.82 0.10 320;
+        --chart-5: 0.70 0.14 140;
+    }
+
+    .dark {
+        --background: 0.18 0.02 30;
+        --foreground: 0.95 0.01 40;
+        --card: 0.22 0.02 35;
+        --card-foreground: 0.95 0.01 40;
+        --popover: 0.22 0.02 35;
+        --popover-foreground: 0.95 0.01 40;
+        /* Brighter coral for dark mode */
+        --primary: 0.75 0.20 25;
+        --primary-foreground: 0.18 0.02 30;
+        /* Warm golden glow */
+        --secondary: 0.45 0.08 60;
+        --secondary-foreground: 0.95 0.01 40;
+        --muted: 0.30 0.02 40;
+        --muted-foreground: 0.70 0.02 45;
+        --accent: 0.65 0.16 55;
+        --accent-foreground: 0.95 0.01 40;
+        --destructive: 0.65 0.22 25;
+        --destructive-foreground: 0.95 0.01 40;
+        --border: 0.35 0.03 40;
+        --input: 0.35 0.03 40;
+        --ring: 0.75 0.20 25;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "kern" 1, "liga" 1;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold tracking-tight;
+    }
+
+    h1 {
+        @apply text-4xl md:text-6xl lg:text-7xl;
+        line-height: 1.1;
+    }
+
+    h2 {
+        @apply text-3xl md:text-4xl lg:text-5xl;
+        line-height: 1.2;
+    }
+
+    h3 {
+        @apply text-2xl md:text-3xl;
+        line-height: 1.3;
+    }
+
+    p {
+        @apply leading-relaxed;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

@@ -1,0 +1,83 @@
+{
+  "kind": "build_request",
+  "title": "Add X link to Join Community and create a Flubby Gallery section with new images",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Update the “Join Community” call-to-action in the Closing CTA section so it includes a working X (Twitter) link pointing to https://x.com/ar94595.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "under join community can u add x link https://x.com/ar94595 ,so that people can join"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The “Join Community” CTA in the Closing CTA section is clickable and navigates to https://x.com/ar94595.",
+        "The link opens in a new tab and uses safe external-link attributes (e.g., rel=\"noopener noreferrer\").",
+        "User-facing label clearly indicates X (e.g., “Join on X” or “Join Community on X”) and remains in English.",
+        "No backend changes are required for this link to function."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add a new “Flubby Gallery” section to the landing page that displays multiple Flubby images with relatable, motivational captions users can connect with.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "also need more images of flubby with different captions which people can connect as flubby gallery"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new section titled “Flubby Gallery” is visible on the landing page.",
+        "The gallery shows at least 6 Flubby images (from new static assets) with a short caption for each item.",
+        "All captions are in English and match the site’s emotional “keep trying / never give up” tone.",
+        "The gallery layout is mobile-first (single column on small screens) and scales to a multi-column grid on larger screens.",
+        "Images are loaded from frontend static assets under /assets/generated and are not fetched from the backend."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Integrate the newly generated Flubby gallery images into the frontend as static assets and reference them from the new gallery section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All required new gallery images exist under frontend/public/assets/generated (or the project’s established generated-assets location).",
+        "The gallery section references the exact generated filenames provided in the image requirements.",
+        "Each gallery image includes appropriate alt text in English.",
+        "No image content is served or proxied via the Motoko backend."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (Shadcn UI sources must be composed, not modified).",
+    "Do not modify immutable hook/bootstrap files listed in SYSTEM_CONTEXT (e.g., frontend/src/main.tsx, frontend/src/hooks/useActor.ts, frontend/src/hooks/useInternetIdentity.ts).",
+    "Keep the backend as a single Motoko actor; no backend changes are required for this request."
+  ],
+  "nonGoals": [
+    "Do not add an email signup or any form submission flow.",
+    "Do not implement image uploads, admin tooling, or any backend storage for gallery content.",
+    "Do not add third-party auth or social API integrations beyond a simple external link to X."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Square illustration of Flubby looking determined with a warm uplifting background (flubby-gallery-01.dim_1200x1200.png)",
+      "Square illustration of Flubby looking tired-but-still-trying, cozy emotional lighting (flubby-gallery-02.dim_1200x1200.png)",
+      "Square illustration of Flubby getting back up after a stumble, hopeful mood (flubby-gallery-03.dim_1200x1200.png)",
+      "Square illustration of Flubby cheering a small win, celebratory but gentle tone (flubby-gallery-04.dim_1200x1200.png)",
+      "Square illustration of Flubby quietly practicing again, calm focused vibe (flubby-gallery-05.dim_1200x1200.png)",
+      "Square illustration of Flubby with a supportive community vibe, warm and friendly (flubby-gallery-06.dim_1200x1200.png)"
+    ],
+    "edits": []
+  }
+}
